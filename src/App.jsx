@@ -8,7 +8,7 @@ const App = () => {
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <h3>CS — Ticket System</h3>
-          <ul class="flex items-center hidden space-x-8 mr-16 lg:flex">
+          <ul class="flex items-center hidden space-x-8  lg:flex">
             <li>
               <a
                 href="/"
@@ -69,7 +69,7 @@ const App = () => {
                 Contact
               </a>
             </li>
-            <li className="ml-8">
+            <li className="ml-6">
              <button className="btn px-2">
                 Sign up
              </button>
@@ -102,31 +102,7 @@ const App = () => {
                 <div class="p-5 bg-white border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
-                        class="inline-flex items-center"
-                      >
-                        <svg
-                          class="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Home
-                        </span>
-                      </a>
+                      <h3>CS — Ticket System</h3>
                     </div>
                     <div>
                       <button
