@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <div class="">
-      {/* <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <h3>CS — Ticket System</h3>
           <ul class="flex items-center hidden space-x-8 mr-16 lg:flex">
@@ -70,7 +70,7 @@ const App = () => {
               </a>
             </li>
             <li className="ml-8">
-             <button className="btn">
+             <button className="btn px-2">
                 Sign up
              </button>
             </li>
@@ -124,7 +124,7 @@ const App = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                          Home
                         </span>
                       </a>
                     </div>
@@ -153,7 +153,7 @@ const App = () => {
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
+                          FAQ
                         </a>
                       </li>
                       <li>
@@ -163,7 +163,7 @@ const App = () => {
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          Changelog
                         </a>
                       </li>
                       <li>
@@ -173,7 +173,7 @@ const App = () => {
                           title="Product pricing"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
+                          Blog
                         </a>
                       </li>
                       <li>
@@ -183,7 +183,7 @@ const App = () => {
                           title="About us"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About us
+                          Download
                         </a>
                       </li>
                       <li>
@@ -193,7 +193,7 @@ const App = () => {
                           aria-label="Sign up"
                           title="Sign up"
                         >
-                          Sign up
+                          Contact
                         </a>
                       </li>
                     </ul>
@@ -203,7 +203,7 @@ const App = () => {
             )}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
