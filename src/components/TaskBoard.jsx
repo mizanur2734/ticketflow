@@ -1,0 +1,77 @@
+import React from "react";
+import { useState } from "react";
+import { use } from "react";
+
+const TaskBoard = ({ ticketData }) => {
+  const tickets = use(ticketData);
+ const [tasks, setTasks] = useState([])
+
+//  add task
+const handleAddTask = (ticket) => {
+    const exits = tasks.find(task => task.id === ticket.id);
+    if (exits) {
+       alert("Task already exists") 
+    }
+    setTasks([...tasks, ticket]);
+};
+
+// complete task
+const handleComplete = (id) => {
+    const remainingTasks = tasks.filter(task => task.id !== id);
+    setTasks(remainingTasks);
+    alert('Task Completed')
+}
+  return (
+    <div className="min-h-screen bg-gray-100 pt-8 grid grid-cols-1 md:grid-cols-4 gap-6">
+      {/* LEFT SIDE - Customer Tickets */}
+      <div className="md:col-span-3">
+        <h2 className="text-xl font-bold mb-4">Customer Tickets</h2>
+        <div className="grid md:grid-cols-2 gap-4">
+          {/* Ticket Card */}
+          {tickets.map((ticket) => (
+            <div onClick={() =>handleAddTask(ticket)} className="bg-white p-4 rounded-xl shadow border">
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="font-bold">
+                  {ticket.title}
+                </h3>
+                <span className="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full">
+                  {ticket.status}
+                </span>
+              </div>
+
+              <p className="text-sm text-gray-500 mb-3">
+                {ticket.description}
+              </p>
+
+              <div className="flex text-xs text-gray-400 mb-2">
+                <span>#{ticket.id} • {ticket.priority}</span>
+                <span className="ml-10">{ticket.customer}</span>
+                <span className="ml-2">📅 {ticket.createdAt}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* RIGHT SIDE - TASK STATUS */}
+      <div className=" p-4 rounded-xl h-fit">
+        <h2 className="text-lg font-bold mb-4">Task Status</h2>
+        {
+            tasks.map(task => <div className="bg-white p-3 shadow rounded-lg mb-3">
+          <p className="font-semibold mb-2">Payment Failed - Card Declined</p>
+          <button onClick={() => handleComplete(task.id)} className="w-full bg-green-500 text-white py-2 rounded-lg">
+            Complete
+          </button>
+        </div>)
+        }
+
+        <h3 className="font-semibold mt-5 mb-2">Resolved Task</h3>
+        <div className="bg-blue-100 p-3 rounded-lg text-sm">
+          Incorrect Billing Address
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TaskBoard;
