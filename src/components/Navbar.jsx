@@ -5,8 +5,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-      <div class="py-5 ">
-        <div class="relative flex items-center justify-between">
+      <div class="py-2">
+        <div class="relative z-50 flex items-center justify-between">
           <h3 className="text-[#130B2D] font-bold md:text-2xl text-xl">
             CS — Ticket System
           </h3>

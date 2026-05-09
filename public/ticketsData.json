@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User cannot login to account",
+    "customer": "Rahim",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed",
+    "description": "Payment gateway not responding",
+    "customer": "Karim",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 3,
+    "title": "Bug in Dashboard",
+    "description": "Dashboard data not loading",
+    "customer": "Sakib",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 4,
+    "title": "Profile Update Error",
+    "description": "Cannot update user profile",
+    "customer": "Mim",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 5,
+    "title": "Email Not Sending",
+    "description": "Verification email failed",
+    "customer": "Jui",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 6,
+    "title": "Slow Website",
+    "description": "Website loading too slowly",
+    "customer": "Tanvir",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 7,
+    "title": "App Crash",
+    "description": "Mobile app crashes instantly",
+    "customer": "Rafi",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 8,
+    "title": "Search Not Working",
+    "description": "Search results not showing",
+    "customer": "Nayeem",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 9,
+    "title": "Password Reset",
+    "description": "Password reset link expired",
+    "customer": "Rupa",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-05-09"
+  },
+  {
+    "id": 10,
+    "title": "Notification Error",
+    "description": "Push notification not received",
+    "customer": "Ayesha",
+    "priority": "Low",
+    "status": "Pending",
+    "createdAt": "2026-05-09"
+  }
+]
