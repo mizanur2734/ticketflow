@@ -33,7 +33,7 @@ const TaskBoard = ({ ticketData, setInProgress, setResolved }) => {
     toast("Task Completed");
   };
   return (
-    <div className="bg-gray-100 pt-14 grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div className="bg-gray-100 pt-12 md:pt-14 grid grid-cols-1 md:grid-cols-4 gap-6">
       {/* LEFT SIDE - Customer Tickets */}
       <div className="md:col-span-3">
         <h2 className="text-xl font-bold mb-4">Customer Tickets</h2>
@@ -67,7 +67,7 @@ const TaskBoard = ({ ticketData, setInProgress, setResolved }) => {
       </div>
 
       {/* RIGHT SIDE - TASK STATUS */}
-      <div className=" p-4 rounded-xl h-fit">
+      <div className="p-4 rounded-xl h-fit">
         <h2 className="text-lg font-bold mb-4">Task Status</h2>
         {tasks.length === 0 ? (
           <p className="text-gray-500">No task added</p>
