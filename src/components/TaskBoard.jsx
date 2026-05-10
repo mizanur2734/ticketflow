@@ -33,7 +33,7 @@ const TaskBoard = ({ ticketData, setInProgress, setResolved }) => {
     toast("Task Completed");
   };
   return (
-    <div className="bg-gray-100 pt-12 md:pt-14 grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div className="bg-gray-100 pt-12 md:pt-14 grid grid-cols-1 md:grid-cols-4 gap-6 px-4">
       {/* LEFT SIDE - Customer Tickets */}
       <div className="md:col-span-3">
         <h2 className="text-xl font-bold mb-4">Customer Tickets</h2>
