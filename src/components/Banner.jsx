@@ -4,9 +4,9 @@ import vectorimage2 from "../assets/Group 2.png";
 
 const Banner = ({ inProgress, resolved }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center md:gap-16 gap-8 md:mt-12 mt-4">
+    <div className="flex flex-col md:flex-row justify-center items-center md:gap-12 gap-8 md:mt-12 mt-4">
       <div
-        className="relative rounded-lg px-54 py-20 text-center bg-gradient-to-r from-[#632EE3]
+        className="relative rounded-lg px-56 py-20 text-center bg-gradient-to-r from-[#632EE3]
        to-[#9F62F2] overflow-hidden"
       >
         {/* LEFT IMAGE */}
