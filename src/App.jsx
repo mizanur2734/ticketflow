@@ -17,7 +17,7 @@ const App = () => {
   const [resolved, setResolved] = useState(0);
   return (
     <div>
-      <div className="mx-auto sm:max-w-xl md:max-w-full md:px-16 px-2">
+      <div className="mx-auto md:px-16 px-2">
         <Navbar />
         <Banner inProgress={inProgress} resolved={resolved} />
         <Suspense fallback={<div>Loading...</div>}>
