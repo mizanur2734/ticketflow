@@ -12,7 +12,7 @@ const TaskBoard = ({ ticketData, setInProgress, setResolved }) => {
   const handleAddTask = (ticket) => {
     const exits = tasks.find((task) => task.id === ticket.id);
     if (exits) {
-      toast("Task already exists");
+      toast.error("Task already exists");
       return;
     }
     setTasks([...tasks, ticket]);
