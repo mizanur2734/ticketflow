@@ -2,7 +2,7 @@ import React from "react";
 import vectorimage1 from "../assets/vector1.png";
 import vectorimage2 from "../assets/Group 2.png";
 
-const Banner = () => {
+const Banner = ({ inProgress, resolved }) => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center md:gap-16 gap-8 md:mt-12 mt-4">
       <div
@@ -26,7 +26,7 @@ const Banner = () => {
         {/* CONTENT */}
         <div className="relative z-10 text-white">
           <h3 className="text-xl">In-progress</h3>
-          <h2 className="text-3xl">0</h2>
+          <h2 className="text-3xl">{inProgress}</h2>
         </div>
       </div>
       <div
@@ -47,7 +47,7 @@ const Banner = () => {
         />
         <div className="text-white">
           <h3 className="text-xl">Resolved</h3>
-          <h2 className="text-2xl">0</h2>
+          <h2 className="text-2xl">{resolved}</h2>
         </div>
       </div>
     </div>
